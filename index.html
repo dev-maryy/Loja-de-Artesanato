@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Artesanal - Onde o Coração Cria</title>
+  <meta name="description" content="Descubra velas, joias e itens artesanais que contam histórias de amor, cuidado e criatividade.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'warm-orange': '#E76F51',
+            'soft-beige': '#FDF6E3',
+            'rich-brown': '#3C2F2F',
+            'light-coral': '#F4A261',
+            'golden-tan': '#E9C46A',
+          },
+          fontFamily: {
+            'playfair': ['Playfair Display', 'serif'],
+            'lora': ['Lora', 'serif'],
+            'roboto': ['Roboto', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-soft-beige font-roboto antialiased">
+  <header class="bg-rich-brown text-white py-4 sticky top-0 z-20 shadow-lg">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-playfair">Loja Artesanal</h1>
+      <nav class="space-x-6">
+        <a href="#destaques" class="hover:text-warm-orange transition-colors">Destaques</a>
+        <a href="#catalogo" class="hover:text-warm-orange transition-colors">Catálogo</a>
+        <a href="#historia" class="hover:text-warm-orange transition-colors">Nossa História</a>
+        <a href="#contato" class="hover:text-warm-orange transition-colors">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section relative bg-gradient-to-r from-warm-orange to-light-coral text-white py-24 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1508716880829-dd496b382c95?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-5xl md:text-6xl font-playfair mb-4">Onde o Coração Cria</h2>
+      <p class="text-xl font-lora mb-8 max-w-3xl mx-auto">
+        Cada peça é mais que um produto — é uma história de amor, mãos habilidosas e momentos únicos. Descubra velas que aquecem a alma, joias que contam segredos e itens que transformam sua casa em um lar.
+      </p>
+      <a
+        href="#catalogo"
+        class="inline-block px-10 py-4 bg-rich-brown text-white rounded-full hover:bg-golden-tan transition-colors animate-pulse-hover text-lg font-roboto"
+      >
+        Conheça Nossas Criações
+      </a>
+    </div>
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+  </section>
+
+  <section id="destaques" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-playfair text-rich-brown text-center mb-8">Destaques do Mês</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1745125996058-9f0d7d2908db?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vela de Lavanda" class="w-full h-64 object-cover rounded-lg">
+            <div class="p-4 text-center">
+              <h3 class="text-xl font-lora text-rich-brown">Vela de Lavanda</h3>
+              <p class="text-warm-orange font-bold">R$ 29,90</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1601544737793-0d21af535968?q=80&w=1125&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Colar de Prata" class="w-full h-64 object-cover rounded-lg">
+            <div class="p-4 text-center">
+              <h3 class="text-xl font-lora text-rich-brown">Colar de Prata</h3>
+              <p class="text-warm-orange font-bold">R$ 89,90</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1722356541579-c5c6b0a42789?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vaso Decorativo" class="w-full h-64 object-cover rounded-lg">
+            <div class="p-4 text-center">
+              <h3 class="text-xl font-lora text-rich-brown">Vaso Decorativo</h3>
+              <p class="text-warm-orange font-bold">R$ 49,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="py-16 bg-gradient-to-b from-soft-beige to-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-playfair text-rich-brown text-center mb-8">Nossas Criações</h2>
+      <p class="text-lg font-lora text-rich-brown text-center mb-12 max-w-3xl mx-auto">
+        Cada item é feito com dedicação, transformando matéria-prima em memórias. Explore nossas velas, joias e peças decorativas, criadas para iluminar sua vida.
+      </p>
+      <div class="flex justify-center space-x-4 mb-12 flex-wrap gap-2">
+        <button class="filter-btn px-6 py-3 bg-warm-orange text-white rounded-full hover:bg-golden-tan transition-colors text-lg font-roboto" data-category="Todos">Todos</button>
+        <button class="filter-btn px-6 py-3 bg-soft-beige text-rich-brown rounded-full hover:bg-warm-orange hover:text-white transition-colors text-lg font-roboto" data-category="Velas">Velas</button>
+        <button class="filter-btn px-6 py-3 bg-soft-beige text-rich-brown rounded-full hover:bg-warm-orange hover:text-white transition-colors text-lg font-roboto" data-category="Joias">Joias</button>
+        <button class="filter-btn px-6 py-3 bg-soft-beige text-rich-brown rounded-full hover:bg-warm-orange hover:text-white transition-colors text-lg font-roboto" data-category="Decoração">Decoração</button>
+      </div>
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <section id="historia" class="py-16 bg-rich-brown text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-playfair mb-8">Nossa História</h2>
+      <p class="text-lg font-lora max-w-3xl mx-auto mb-6">
+        Tudo começou com um sonho: transformar paixão em arte. Em um pequeno ateliê, sob a luz suave de uma vela, nossas mãos deram vida a peças que carregam histórias. Cada curva de uma joia, cada fragrância de uma vela, cada detalhe de um vaso é um pedaço de nós, feito para tocar seu coração.
+      </p>
+      <p class="text-lg font-lora max-w-3xl mx-auto">
+        Hoje, a Loja Artesanal é mais que um e-commerce — é um convite para você se conectar com a beleza do feito à mão, com a magia do único.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-playfair text-rich-brown text-center mb-8">O Que Nossos Clientes Dizem</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-lg font-lora text-rich-brown italic mb-4">
+            “A vela de lavanda transformou minha casa em um refúgio de paz. Sinto o cuidado em cada detalhe.”
+          </p>
+          <p class="text-sm font-roboto text-warm-orange font-bold">— Ana, São Paulo</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-lg font-lora text-rich-brown italic mb-4">
+            “O colar de prata é minha peça favorita. É como carregar uma história comigo todos os dias.”
+          </p>
+          <p class="text-sm font-roboto text-warm-orange font-bold">— Marina, Rio de Janeiro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-16 bg-gradient-to-b from-white to-soft-beige">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-playfair text-rich-brown text-center mb-8">Converse Conosco</h2>
+      <p class="text-lg font-lora text-rich-brown text-center mb-12 max-w-3xl mx-auto">
+        Quer uma peça personalizada ou apenas compartilhar sua paixão pelo artesanato? Estamos aqui para ouvir você.
+      </p>
+      <form id="contact-form" class="max-w-lg mx-auto">
+        <div class="mb-6">
+          <label for="name" class="block text-rich-brown font-roboto mb-2">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full px-4 py-3 rounded bg-soft-beige border border-rich-brown focus:outline-none focus:border-warm-orange"
+            required
+          >
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-rich-brown font-roboto mb-2">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full px-4 py-3 rounded bg-soft-beige border border-rich-brown focus:outline-none focus:border-warm-orange"
+            required
+          >
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-rich-brown font-roboto mb-2">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            class="w-full px-4 py-3 rounded bg-soft-beige border border-rich-brown focus:outline-none focus:border-warm-orange"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="px-10 py-4 bg-warm-orange text-white rounded-full hover:bg-golden-tan transition-colors animate-pulse-hover text-lg font-roboto"
+        >
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-30">
+    <div class="bg-white rounded-lg p-8 max-w-lg mx-auto relative">
+      <button id="close-modal" class="absolute top-4 right-4 text-rich-brown hover:text-warm-orange text-2xl">×</button>
+      <img id="modal-image" src="" alt="" class="w-full h-64 object-cover rounded-lg mb-6">
+      <h3 id="modal-name" class="text-2xl font-playfair text-rich-brown mb-2"></h3>
+      <p id="modal-description" class="text-lg font-lora text-rich-brown mb-4"></p>
+      <p id="modal-price" class="text-xl font-bold text-warm-orange mb-4"></p>
+      <div class="mb-4">
+        <label for="modal-quantity" class="block text-rich-brown font-roboto mb-2">Quantidade</label>
+        <input
+          type="number"
+          id="modal-quantity"
+          min="1"
+          value="1"
+          class="w-20 px-4 py-2 rounded bg-soft-beige border border-rich-brown"
+        >
+      </div>
+      <a
+        id="modal-buy"
+        href=""
+        target="_blank"
+        class="inline-block px-8 py-3 bg-warm-orange text-white rounded-full hover:bg-golden-tan transition-colors animate-pulse-hover text-lg font-roboto"
+      >
+        Comprar Agora
+      </a>
+    </div>
+  </div>
+
+  <footer class="bg-rich-brown text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg font-lora">© 2025 Loja Artesanal. Feito com amor, para você.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

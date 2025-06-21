@@ -31,7 +31,7 @@ A **Loja Artesanal** é mais do que um site — é uma celebração do feito à 
 
 ### Online
 
-Acesse a página ao vivo em: [https://dev-maryy.github.io/loja-artesanal](https://dev-maryy.github.io/Loja-de-Artesanato)
+Acesse a página ao vivo em: [https://dev-maryy.github.io/Loja-de-Artesanato](https://dev-maryy.github.io/Loja-de-Artesanato)
 
 ### Localmente
 

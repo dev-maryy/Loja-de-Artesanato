@@ -31,13 +31,13 @@ A **Loja Artesanal** é mais do que um site — é uma celebração do feito à 
 
 ### Online
 
-Acesse a página ao vivo em: [https://dev-maryy.github.io/loja-artesanal](https://dev-maryy.github.io/loja-artesanal)
+Acesse a página ao vivo em: [https://dev-maryy.github.io/loja-artesanal](https://dev-maryy.github.io/Loja-de-Artesanato)
 
 ### Localmente
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/dev-maryy/loja-artesanal
+   git clone https://github.com/dev-maryy/Loja-de-Artesanato
    ```
 2. Abra o arquivo `index.html` em um navegador moderno.
 
